@@ -17,6 +17,7 @@ function doesEmailExist($dbconn, $input){
   return $result;
 }
 
+
 function decodeTime($time){
   $tm = explode(":",$time);
 
