@@ -4,7 +4,8 @@ ob_start();
 
 
 session_start();
-authenticateTworker();
+
+authenticateTworker('myDashboard');
 if(isset($_SESSION['t_id'])){
   $sid = $_SESSION['t_id'];
 }
@@ -13,6 +14,7 @@ extract($getInfo);
 
 $error = [];
 if(array_key_exists('submit', $_POST)){
+
 
   define("MAX_FILE_SIZE", "2097152");
 
@@ -47,7 +49,7 @@ if($_FILES['pic']['size'] > MAX_FILE_SIZE){
 
 if(empty($error)){
   $clean = array_map('trim', $_POST);
-$ver = compressImage($_FILES, 'pic',80, 'uploads/');
+$ver = compressImage($_FILES, 'pic',50, 'uploads/');
 completeRegistration($econn, $clean, $sid,$ver);
 }else{
   foreach ($error as $err) {

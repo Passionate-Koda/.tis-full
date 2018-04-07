@@ -84,7 +84,7 @@ include 'includes/header.php';
                        </div>
                        <div class="directory-body">
                        <div class="directory-top">
-                         <div class="display-picture" style=" background-image:url('asset/images/13332735_494812390716002_6476487491967411177_n.jpg');">
+                         <div class="display-picture" style=" background-image:url('<?php echo $tworkers_image ?>');">
 
 
                          </div>
@@ -103,8 +103,8 @@ include 'includes/header.php';
                                  <i id="ico"  class="flaticon-smartphone-1
                  "></i>
                                </div>
+                               <a href="tel:<?php echo $contact_phone?>"><p><?php echo $contact_phone  ?></p></a>
 
-                               <p><?php echo $contact_phone  ?></p>
 
                              </span>
                            </li>

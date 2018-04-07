@@ -19,7 +19,15 @@ $iValue = NULL;
 $sValue = NULL;
 $rValue = NULL;
 $retValue = NULL;
+$hidValue = NULL;
+$tokenValue = NULL;
 
+if(isset($_GET['hid'])){
+  $hidValue = $_GET['hid'];
+}
+if(isset($_GET['token'])){
+  $tokenValue = $_GET['token'];
+}
 if(isset($_GET['msg'])){
   $msgValue = $_GET['msg'];
 }
@@ -118,6 +126,10 @@ switch($uri[1]){
 
   case "f_ajax":
   include APP_PATH."/view/public/js/ajax.js";
+  break;
+
+  case "tworkersVerification?hid=$hidValue&token=$tokenValue":
+  include APP_PATH."/view/verify.php";
   break;
 
   case "u_login":

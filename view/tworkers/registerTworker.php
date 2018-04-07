@@ -5,6 +5,12 @@ ob_start();
 // define("REC_PATH", dirname(dirname(__FILE__)));
 // include REC_PATH.'/includes/header.php';
 
+
+
+
+
+
+
 $error = [];
 if(array_key_exists('submit', $_POST)){
   if(doesEmailExist($econn, $_POST['email'])){
@@ -18,8 +24,19 @@ if(array_key_exists('submit', $_POST)){
   }
   if(empty($error)){
     $clean = array_map('trim', $_POST);
-     registerTworker($econn, $clean);
-     loginTworker($econn,$clean);
+     $red = registerTworker($econn, $clean);
+// die(var_dump($red));
+     $hid = $red[0];
+     $token = $red[1];
+
+header("Location:tworkersVerification?hid=$hid&token=$token");
+
+
+
+     //From email address and
+            // loginTworker($econn,$clean);
+
+
   }
 
 }

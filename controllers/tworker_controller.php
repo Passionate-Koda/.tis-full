@@ -135,8 +135,13 @@ function displayErrors($error, $field){
 
 // functions that does registration
 function registerTworker($dbconn,$input){
+  $result = [];
   $hash  = password_hash($input['hash'], PASSWORD_BCRYPT);
-  $stmt = $dbconn->prepare("INSERT INTO tworkers(tworkers_surname, tworkers_firstname, tworkers_middlename,tworkers_phonenumber,tworkers_email,tworkers_hash,tworkers_term, tworkers_reg_date) VALUES(:ts, :tf,:tm, :tp,:te, :hs,:trm,now()) ");
+  $idrand = rand(000000000000,99999999999);
+  $idprocess = $idrand.$input['firstname'];
+    $hash_id = str_shuffle($idprocess);
+
+  $stmt = $dbconn->prepare("INSERT INTO tworkers(tworkers_surname, tworkers_firstname, tworkers_middlename,tworkers_phonenumber,tworkers_email,tworkers_hash,tworkers_term, tworkers_reg_date,tworkers_hashid) VALUES(:ts, :tf,:tm, :tp,:te, :hs,:trm,now(),:hid) ");
 
   $data = [
     ':ts' => $input['surname'],
@@ -146,27 +151,27 @@ function registerTworker($dbconn,$input){
     ':te' => $input['email'],
     ':hs' => $hash,
     ':trm'=>$input['term'],
+    ':hid'=>$hash_id
   ];
 // ////var_dump($hash);
   $stmt->execute($data);
-  ////var_dump($data);
 
-  $getStmt = $dbconn->prepare("SELECT tworkers_id FROM tworkers WHERE tworkers_hash =:ps ");
+  $ran = rand(0000000000,999999999);
+  $process = $ran.$input['email'];
+  $token = str_shuffle($process);
 
-  $getStmt->bindParam(':ps', $hash);
-  $getStmt->execute();
 
-  $row = $getStmt->fetch(PDO::FETCH_BOTH);
+$updatever = $dbconn->prepare("INSERT INTO verify VALUES(NULL,:hid,:tk,NOW(),NOW())");
+$data2 = [
+  'hid' => $hash_id,
+  'tk' => $token
+];
+$updatever->execute($data2);
+  $result[] = $hash_id;
+  $result[] = $token;
 
-  extract($row);
+return $result;
 
-  $hash_id = rand(000000000000000,99999999999999);
-  ////var_dump($hash_id);
-
-  $sethash = $dbconn->prepare("UPDATE tworkers SET tworkers_hashid =:hid WHERE tworkers_hash =:ps");
-  $sethash->bindParam(':ps', $hash);
-  $sethash->bindParam(':hid', $hash_id);
-  $sethash->execute();
 }
 
 
@@ -350,11 +355,6 @@ function getNewInfo($dbconn, $input, $getNum ){
   $setLoginDetail->bindParam(":hs", $hash);
   $setLoginDetail->execute();
 }
-
-
-
-
-
 
 function doesUserEmailExist($dbconn, $input){
   $result = false;

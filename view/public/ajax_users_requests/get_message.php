@@ -1,6 +1,9 @@
 <?php
   $getInfo = getUser($econn, $_POST['session']);
   extract($getInfo);
+
+  $getTInfo = getTworker($econn, $_POST['receiver']);
+  extract($getTInfo);
 $Username = ucfirst($username);
 
     $state = $econn->prepare("SELECT * FROM message WHERE sender = :send AND reciever = :rec OR sender = :rec AND reciever = :send");
@@ -34,7 +37,7 @@ $Username = ucfirst($username);
 
         }else{
           echo  '  <li class="chat-box float-left">
-              <div class="chat-avater float-left" style="background-image: url(\'asset/images/12805850_470834549780453_8828166806062221559_n.jpg\')">
+              <div class="chat-avater float-left" style="background-image: url('.$tworkers_image.'); background-size:cover; background-repeat:no-repeat; background-position:center;">
               </div>
               <div class="msg float-left radius-left">
                 <div class="text">

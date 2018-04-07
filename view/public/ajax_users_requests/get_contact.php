@@ -42,9 +42,7 @@
 
         echo '<li class="contacts">
           <a id="anchor" href="contact?o='.$contact_owner.'&t='.$contact_hash_id.'&i='.$contact_id.'">
-          <div class="avater">
-
-          <img class="img-responsive" src="image/3.png" alt="">
+          <div class="avater" style="background-image:url('.$tworkers_image.');background-size:cover; background-repeat:no-repeat; background-position:center;">
             </div>
             <h3>'.$contact_name.'</h3>
             <p>'.$contact_category.'</p>
