@@ -167,11 +167,6 @@ $data2 = [
   'tk' => $token
 ];
 $updatever->execute($data2);
-
-
-
-
-
   $result[] = $hash_id;
   $result[] = $token;
 
