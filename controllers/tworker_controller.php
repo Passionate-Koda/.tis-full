@@ -356,11 +356,6 @@ function getNewInfo($dbconn, $input, $getNum ){
   $setLoginDetail->execute();
 }
 
-
-
-
-
-
 function doesUserEmailExist($dbconn, $input){
   $result = false;
   $stmt = $dbconn->prepare("SELECT * FROM user_login_details WHERE email_address = :em");

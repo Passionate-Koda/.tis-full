@@ -36,10 +36,11 @@
         <!--[if lt IE 9]>
           <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
         <![endif]-->
+        
     </head>
     <?php
 if($page == "home"){    ?>
-    <body class="animated fadeIn" onpageshow="getPendingTaskCount();getTaskCount(); getNofication();getNoficationCount()">
+  <body class="animated fadeIn" onpageshow="getPendingTaskCount();getTaskCount(); getNofication();getNoficationCount()">
         <!-- section header -->
     <?php  }elseif($page == "directory" || $page == "contact_info" || $page == "message" || $page == "chat"){?>
 

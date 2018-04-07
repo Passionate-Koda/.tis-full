@@ -44,7 +44,7 @@ if(isset($_SESSION['u_id'])){
 
         echo ' <li class="contacts">
            <a id="anchor" href="message?s='.$contact_owner.'&r='.$contact_hash_id.'">
-           <div class="avater" >
+           <div class="avater" style="background-image:url('.$tworkers_image.');background-size:cover; background-repeat:no-repeat; background-position:center;">
 
 
              </div>
