@@ -43,6 +43,10 @@
 <?php }elseif($page == "tdashboard"){ ?>
 <body onpageshow="getNofication();getNoficationCount();getAcceptedTaskCount();getDeclinedTaskCount()">
 
+
+<?php }elseif($page == "task"){ ?>
+<body onpageshow="getNofication();getNoficationCount(); updateNotif('<?php echo $getid ?>');getAcceptedTaskCount();getDeclinedTaskCount()">
+
 <?php }else{ ?>
 
     <body class="animated fadeIn">

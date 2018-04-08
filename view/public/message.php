@@ -29,7 +29,7 @@ include 'includes/header.php';
 
                      <!--breadcrumb-->
                      <ul class="breadcrumb">
-                         <li><a href="index-2.html"><i class="fa fa-home"></i> Dashboard</a></li>
+                         <li><a href="dashboard"><i class="fa fa-home"></i> Dashboard</a></li>
                          <li class="active">Inbox</li>
 
                      </ul>
