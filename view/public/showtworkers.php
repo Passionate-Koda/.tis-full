@@ -78,6 +78,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <link rel="stylesheet" type="text/css" href="css/component.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
   <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+  
 
   <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
   <!--/web-fonts-->
@@ -695,52 +696,44 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       </div>
                       <!--//search-car -->
                       <!-- footer -->
-                      	<div class="footer">
-		<div class="container">
-			<div class="footer-grids">
-				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".5s">
-					<h3>About Us</h3>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.<span>Excepteur sint occaecat cupidatat
-						non proident, sunt in culpa qui officia deserunt mollit.</span></p>
-				</div>
-				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".6s">
-					<h3>Contact Info</h3>
-					<ul>
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
-					</ul>
-				</div>
-				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".7s">
-					<h3>Flickr Posts</h3>
+                      <div class="footer">
+                    		<div class="container">
+                    			<div class="footer-grids">
+                    				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".5s">
+                    					<h3>About Us</h3>
+                    					<p>TUNSE is a platform that brings the T-worker (a pool of verified individuals) in the area and those who need their services together. <br>Tunse was founded to solve the need for being able to get a relaible help, wherever and whenever. </span></p>
+                    				</div>
 
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".8s">
-					<h3>Blog Posts</h3>
-					<div class="footer-grid-sub-grids">
+                    				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".7s">
+                    					<!-- <h3>Flickr Posts</h3> -->
 
-						<div class="clearfix"> </div>
-					</div>
-					<div class="footer-grid-sub-grids">
+                    					<div class="clearfix"> </div>
+                    				</div>
+                    				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".8s">
+                    					<!-- <h3>Blog Posts</h3> -->
 
-						<div class="footer-grid-sub-grid-right">
-							<h4><a href="single.html">Quis autem vel eum iure</a></h4>
-							<p>Posted On 25/5/2016</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="footer-logo animated wow slideInUp" data-wow-delay=".5s">
-				<h2><a href="tunsehome">TUNSE<span>Connects you to reliable Artisan</span></a></h2>
-			</div>
-			<div class="copy-right animated wow slideInUp" data-wow-delay=".5s">
-				<p>&copy 2017 Tunse. All rights reserved | UI Designed by <a href="http://w3layouts.com/">W3layouts</a></p>
-			</div>
-		</div>
-	</div>
+
+                    				</div>
+                            <div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".6s">
+                    					<h3>Contact Info</h3>
+                    					<ul>
+                    						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Covenant University
+                    Ota,<span> Ogun State .</span></li>
+                    						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@tunse.org</a></li>
+                    						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>0802 665 0762 </li>
+                    						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>0803 067 8010  </li>
+                    					</ul>
+                    				</div>
+                    				<div class="clearfix"> </div>
+                    			</div>
+                    			<div class="footer-logo animated wow slideInUp" data-wow-delay=".5s">
+                    				<h2><a href="tunsehome">TUNSE<span>Connects you to reliable Artisan</span></a></h2>
+                    			</div>
+                    			<div class="copy-right animated wow slideInUp" data-wow-delay=".5s">
+                    				<p>&copy 2018 Tunse. All rights reserved</a></p>
+                    			</div>
+                    		</div>
+                    	</div>
 
 
                         <script src="js/jquery-1.11.1.min.js"></script>

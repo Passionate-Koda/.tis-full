@@ -15,7 +15,7 @@ color: #fff;
     padding: 15px 20px;
     margin: 0;
     font-weight: 300;
-    background: #E16B5B;
+    background: #70AD47;
     text-align: center;
 }
 .cbp-spmenu ul{
@@ -109,20 +109,20 @@ color: #fff;
 	}
 }
 @media (max-width:1280px){
-	
+
 }
 @media (max-width:1024px){
 
-	
+
 }
 @media (max-width:768px){
 
 }
 @media (max-width:640px){
-	
+
 }
 @media (max-width:480px){
-	
+
 	.cbp-spmenu-vertical {
 		width: 350px;
 		height: 524px;
@@ -156,6 +156,5 @@ color: #fff;
 	.cbp-spmenu-vertical {
 			width:280px;
 	}
-	
-}
 
+}

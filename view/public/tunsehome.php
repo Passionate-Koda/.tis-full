@@ -204,13 +204,13 @@ include 'includes/home_header.php';
 
 
 						 </div>
-						 <div class="social-icons">
+						 <!-- <div class="social-icons">
 									<ul>
 										<li><a href="#"><span class="icons"></span><span class="text">Facebook</span></a></li>
 										<li class="twt"><a href="#"><span class="icons"></span><span class="text">Twitter</span></a></li>
 										<li class="ggp"><a href="#"><span class="icons"></span><span class="text">Google+</span></a></li>
 									</ul>
-									</div>
+									</div> -->
 					</div>
 				</div>
 			</div>
@@ -289,9 +289,7 @@ include 'includes/home_header.php';
 
 
               <div class="clearfix"></div>
-              <div class="serch-button">
-                <a href="#car-loan1" class="read hvr-shutter-in-horizontal scroll">Continue</a>
-            </div>
+
           </div>
         </div>
         <!--//car-loan-top-->
@@ -302,36 +300,28 @@ include 'includes/home_header.php';
 			<div class="footer-grids">
 				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".5s">
 					<h3>About Us</h3>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.<span>Excepteur sint occaecat cupidatat
-						non proident, sunt in culpa qui officia deserunt mollit.</span></p>
+					<p>TUNSE is a platform that brings the T-worker (a pool of verified individuals) in the area and those who need their services together. <br>Tunse was founded to solve the need for being able to get a relaible help, wherever and whenever. </span></p>
 				</div>
-				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".6s">
-					<h3>Contact Info</h3>
-					<ul>
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
-					</ul>
-				</div>
+
 				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".7s">
-					<h3>Flickr Posts</h3>
+					<!-- <h3>Flickr Posts</h3> -->
 
 					<div class="clearfix"> </div>
 				</div>
 				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".8s">
-					<h3>Blog Posts</h3>
-					<div class="footer-grid-sub-grids">
+					<!-- <h3>Blog Posts</h3> -->
 
-						<div class="clearfix"> </div>
-					</div>
-					<div class="footer-grid-sub-grids">
 
-						<div class="footer-grid-sub-grid-right">
-							<h4><a href="single.html">Quis autem vel eum iure</a></h4>
-							<p>Posted On 25/5/2016</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
+				</div>
+        <div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".6s">
+					<h3>Contact Info</h3>
+					<ul>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Covenant University
+Ota,<span> Ogun State .</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@tunse.org</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>0802 665 0762 </li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>0803 067 8010  </li>
+					</ul>
 				</div>
 				<div class="clearfix"> </div>
 			</div>

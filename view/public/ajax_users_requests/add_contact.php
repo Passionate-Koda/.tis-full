@@ -21,19 +21,11 @@ function getTaskSkill($dconn, $post){
   $resp = $skill->fetch(PDO::FETCH_BOTH);
     //var_dump($resp);
     extract($resp);
-
-
-
-
 return $skill;
-
 }
 
 
-
 $cat = getTaskSkill($econn, $_POST['contactId']);
-
-
 $check = $econn->prepare("SELECT * FROM contacts WHERE contact_category = :ccat AND contact_hash_id = :ch AND contact_owner = :co");
 $check->bindParam(":ccat", $cat);
 $check->bindParam(":ch", $_POST['contactHash']);

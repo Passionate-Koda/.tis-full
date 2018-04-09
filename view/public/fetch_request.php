@@ -22,9 +22,11 @@ if(isset($_GET['get'])){
         //   <p>'.$tworkers_lga.'</p>
         // </a></li><hr><br>';
 
+        $tdes = previewBody($tworkers_description,9);
+
         echo '<div class="item  col-xs-4 col-lg-4">
           <div class="thumbnail">
-            <a href="#" data-toggle="modal" data-target="#myModal'.$tworkers_hashid.'"><img class="group list-group-image" src="'.$tworkers_image.'" alt="Catchy Carz"></a>
+            <a href="#" data-toggle="modal" data-target="#myModal'.$tworkers_hashid.'"><div style="width:auto; border:2px solid green; height:50vh; background-image:url('.$tworkers_image.'); background-size:cover; background-repeat:no-repeat; background-position:center;"></div></a>
             <div class="table-text">
               <h4 ><a href="#" data-toggle="modal" data-target="#myModal'.$tworkers_hashid.'"  class="click-search"><span class="spancarname">'.$name.'</span></a></h4>
               <p class="gridViewPrice hide">
@@ -33,8 +35,8 @@ if(isset($_GET['get'])){
 
                 <div class="clearfix"></div>
                 <a href="#" data-toggle="modal" data-target="#myModal'.$tworkers_hashid.'">
-                  <p class="listing-item-kms"><span class="slkms">'.$tworkers_description.'</span></p>
                   <p class="listing-item-area"><span class="cityname">'.$tworkers_lga.'</span></p>
+                  
                 </a>
               </div>
               <div class="clearfix"></div>

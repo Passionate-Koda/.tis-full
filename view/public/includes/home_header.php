@@ -129,24 +129,24 @@
                 </div>
 								</form>
                 </li>
-								<div class="login-bottom">
+								<!-- <div class="login-bottom">
 									<ul>
 										<li>
 											<a href="#">Forgot password?</a>
 										</li>
 
 									</ul>
-									<div class="clearfix"></div>
-								</div>
-								<div class="clearfix"></div>
+
+								</div> -->
+								<!-- <div class="clearfix"></div> -->
 							</div>
-							<div class="social-icons">
+							<!-- <div class="social-icons">
 							<ul>
 								<li><a href="#"><span class="icons"></span><span class="text">Facebook</span></a></li>
 								<li class="twt"><a href="#"><span class="icons"></span><span class="text">Twitter</span></a></li>
 								<li class="ggp"><a href="#"><span class="icons"></span><span class="text">Google+</span></a></li>
 							</ul>
-						</div>
+						</div> -->
 							</div>
 							</nav>
 						</div>

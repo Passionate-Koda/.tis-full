@@ -43,6 +43,10 @@
 <?php }elseif($page == "tdashboard"){ ?>
 <body onpageshow="getNofication();getNoficationCount();getAcceptedTaskCount();getDeclinedTaskCount()">
 
+
+<?php }elseif($page == "task"){ ?>
+<body onpageshow="getNofication();getNoficationCount(); updateNotif('<?php echo $getid ?>');getAcceptedTaskCount();getDeclinedTaskCount()">
+
 <?php }else{ ?>
 
     <body class="animated fadeIn">
@@ -58,12 +62,7 @@
                 <a data-pjax=".content-body" href="index.php">
                     <img class="brand-logo" src="asset/images/dummy/logo2.png" alt="Tunse Logo">
                 </a>
-                <?php if($tworkers_dob == NULL){?>
-                  To continue, Please Complete your registration <a href="c_registration">here</a>
-                <?php }else{ ?>
-                <span>Welcome </span>
-
-                <?php }?>
+              
             </div><!-- header brand -->
 
             <!-- header-profile -->
@@ -81,8 +80,8 @@
                         <li><a href="#"><i class="fa fa-sign-out"></i> Log Out</a></li>
                     </ul>
                 </div>
-                <div class="profile-picture">
-                    <img alt="me" src="asset/images/dummy/0c31c9dc.profile.jpg">
+                <div class="profile-picture" style="background-image:url(<?php echo $tworkers_image ?>); background-size:cover; background-position:center; background-repeat:no-repeat;">
+                    <!-- <img alt="me" src="<?php// echo $tworkers_image ?>"> -->
                 </div>
             </div><!-- header-profile -->
 

@@ -17,6 +17,54 @@ function doesEmailExist($dbconn, $input){
   return $result;
 }
 
+function decodeDate($date){
+  $split = explode('-',$date);
+  $month = $split[1];
+  $day = $split[2];
+  $year = $split[0];
+
+  if($month == 1 ){
+    $month = "January";
+  }
+  if($month == 2 ){
+    $month = "February";
+  }
+  if($month == 3 ){
+    $month = "March";
+  }
+  if($month == 4){
+    $month = "April";
+  }
+  if($month == 5){
+    $month = "May";
+  }
+  if($month == 6 ){
+    $month = "June";
+  }
+  if($month == 7 ){
+    $month = "July";
+  }
+  if($month == 8 ){
+    $month = "August";
+  }
+  if($month == 9 ){
+    $month = "September";
+  }
+  if($month == 10 ){
+    $month = "October";
+  }
+  if($month == 11 ){
+    $month = "November";
+  }
+  if($month == 12 ){
+    $month = "December";
+  }
+
+  $newDate = $month.' '.$day.', '.$year;
+
+  return $newDate;
+}
+
 
 function decodeTime($time){
   $tm = explode(":",$time);
@@ -120,6 +168,16 @@ function doesPhoneNumberExist($dbconn, $input){
   return $result;
 }
 
+function previewBody($string, $count){
+  $original_string = $string;
+  $words = explode(' ', $original_string);
+  if(count($words) > $count){
+    $words = array_slice($words, 0, $count);
+    $string = implode(' ', $words);
+  }
+  return $string;
+}
+
 
 
 //function that display errors
@@ -156,6 +214,7 @@ function registerTworker($dbconn,$input){
 // ////var_dump($hash);
   $stmt->execute($data);
 
+
   $ran = rand(0000000000,999999999);
   $process = $ran.$input['email'];
   $token = str_shuffle($process);
@@ -169,6 +228,7 @@ $data2 = [
 $updatever->execute($data2);
   $result[] = $hash_id;
   $result[] = $token;
+
 
 return $result;
 
