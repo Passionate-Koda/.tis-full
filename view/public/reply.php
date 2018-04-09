@@ -66,7 +66,7 @@ include 'includes/header.php';
                                           <div class="" style="text-align: center">
                                             <hr>
 
-                                            <p><img style=" margin-left: auto;margin-right: auto;text-align: center;display: table-cell;vertical-align: middle;max-height: 350px;max-width: 350px;" src="image/pic3.jpg" style="height: 100px; width: 150px" class="img-responsive" alt="Fountain" class="img-rounded img-responsive"></p>
+                                            <p><img style=" margin-left: auto;margin-right: auto;text-align: center;display: table-cell;vertical-align: middle;max-height: 350px;max-width: 350px;" src="<?php echo $tworkers_image ?>" style="height: 100px; width: 150px" class="img-responsive" alt="Fountain" class="img-rounded img-responsive"></p>
                                             <hr>
                                             <h1>Task Details</h1>
                                             <p><strong>Tworker:</strong> <?php echo $uname ?></p>

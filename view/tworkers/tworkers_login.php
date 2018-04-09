@@ -133,7 +133,7 @@ session_start();
 										<div class="form-group">
 											<div class="input-group input-group-in">
 												<span class="input-group-addon text-muted">@</span>
-												<input type="text" class="form-control" name="email" required="" minlength="4" placeholder="johndoe" autocomplete="off">
+												<input type="text" class="form-control" name="email" required="" minlength="4" placeholder="email" autocomplete="off">
 											</div><!--/input-group-->
 										</div><!--/form-group-->
 
@@ -168,7 +168,7 @@ session_start();
 											<a href="#" rel="tooltip" title="Signin with Github account" class="btn btn-sm btn-cloud"><span class="fa fa-github"></span></a>
 										</p>
 
-										<p class="margin-top"><small>Don't have a account? <a data-toggle="tab" href="tworkersRegistration"><strong>Creata an Account</strong></a></small></p>
+										<p class="margin-top"><small>Don't have a account? <a href="tworkerRegistration"><strong>Creata an Account</strong></a></small></p>
 									</form><!--/#signin-form-->
 								</div><!--/signin-->
 

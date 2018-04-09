@@ -7,6 +7,7 @@ ob_start();
 
 $error = [];
 if(array_key_exists('submit', $_POST)){
+  // die(var_dump($_POST));
   if(doesEmailExist($econn, $_POST['email'])){
     $error['email'] = "Email Already Exist";
   }
@@ -141,8 +142,8 @@ header("Location:tworkersVerification?hid=$hid&token=$token");
 
                     <div class="form-group margin-top">
                       <div class="nice-checkbox">
-                        <input class="checkbox-o" type="checkbox" name="newsletter" id="newsletter" checked="checked">
-                        <label for="newsletter">Sign me up for the newsletter</label>
+                        <input class="checkbox-o" value="accept" type="checkbox" name="term" id="newsletter">
+                        <label for="newsletter">Accept Terms and Conditions</label>
                       </div>
                     </div>
 

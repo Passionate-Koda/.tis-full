@@ -19,6 +19,7 @@ include 'includes/header.php';
 
 
              <div class="content">
+
                  <?php include 'includes/task_tab.php' ?>
                  <!-- content-control -->
                  <div class="content-control">
@@ -31,6 +32,19 @@ include 'includes/header.php';
                  <!-- /content-control -->
 
                  <div class="content-body">
+                   <div class="callout callout-success">
+
+                     <?php if($tworkers_dob == NULL){?>
+
+                       To continue, Please Complete your registration <a href="c_registration">here</a>
+                     <?php }else{ ?>
+                     <h3>Welcome </h3>
+
+                     <?php }?>
+
+
+                   </div>
+
 
 
 

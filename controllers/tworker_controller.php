@@ -168,6 +168,16 @@ function doesPhoneNumberExist($dbconn, $input){
   return $result;
 }
 
+function previewBody($string, $count){
+  $original_string = $string;
+  $words = explode(' ', $original_string);
+  if(count($words) > $count){
+    $words = array_slice($words, 0, $count);
+    $string = implode(' ', $words);
+  }
+  return $string;
+}
+
 
 
 //function that display errors
@@ -204,6 +214,7 @@ function registerTworker($dbconn,$input){
 // ////var_dump($hash);
   $stmt->execute($data);
 
+
   $ran = rand(0000000000,999999999);
   $process = $ran.$input['email'];
   $token = str_shuffle($process);
@@ -217,6 +228,7 @@ $data2 = [
 $updatever->execute($data2);
   $result[] = $hash_id;
   $result[] = $token;
+
 
 return $result;
 

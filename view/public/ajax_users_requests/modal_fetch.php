@@ -45,28 +45,55 @@ $Username = ucfirst($username);
 
             echo  "</div></div>";
             echo "<div class=\"modal-body about\">";
-            echo "<div class=\"login-top cars sign-top one\">";
-                echo    "<h4>$name</h4>
-                    <h5>$tworkers_description</h5>";
+            // echo "<div class=\"login-top cars sign-top one\">";
+            //     echo    "<h4>$name</h4>
+            //         <h5>$tworkers_description</h5>";
+            //
+            //         echo "<img src=\"$tworkers_image\" alt=\"$name\" style=\" margin-left: auto;margin-right: auto;text-align: center;display: table-cell;vertical-align: middle;max-height: 350px;max-width: 350px;\">";
+            //         echo "<div class=\"car-form-pop\">";
+            //           echo "<p><span>Available</span></p>
+            //           <div class=\"location1\">
+            //         <p>Location: <span>$tworkers_lga</span></p>
+            //           </div>
+            //           <form  action=\"#\" method=\"post\">
+            //           <input type=\"hidden\" id=\"$tworkers_hashid\" value=\"$tworkers_hashid\">
+            //           <div class=\"input\">
+            //           <label for=\"brand2\"><span></span>Send a task to $name</label>
+						// 					<textarea class= spellcheck=\"false\" name=\"email_message\" rows=\"8\" cols=\"50\"></textarea>
+						// 					</div>
+            //             <div class=\"send-button\">
+            //               <input   type=\"submit\" onclick=\"sendTask(this.form.elements[0].id,'$sess',this.form.elements[1].value,'$Username','$skill');this.form.reset()\" name=\"sentTask\" value=\"SEND TASK\">
+            //             </div>
+            //           </form>
+            //         </div>
+            echo '<div class="" style="text-align: center">
+            <h3>'.$name.'</h3>
+            <p class="text-success">Location: <span>'.$tworkers_lga.'</span></p>
+                  <hr>
+                  <p><img style=" margin-left: auto;margin-right: auto;text-align: center;display: table-cell;vertical-align: middle;max-height: 250px;max-width: 250px;" src="'.$tworkers_image.'" style="height: 100px; width: 150px" class="img-responsive" alt="Fountain" class="img-rounded img-responsive"></p>
+                  <hr>
+                  <h4>Description</h4>
+                  <p>'.$tworkers_description.' </p>
+                  <form  action="#" method="post">
+                   <input type="hidden" id="'.$tworkers_hashid.'" value="$tworkers_hashid">
+                   <label for=\"brand2\"><span></span>Send a task to '.$name.'</label>
+                   	<textarea maxlength="200" maxlength="50" class="form-control" spellcheck="false" name="email_message" rows="auto" cols="50" required></textarea>';
+                    echo '<div class="content-body">
+                      <div class="alert alert-success">
 
-                    echo "<img src=\"$tworkers_image\" alt=\"$name\">";
-                    echo "<div class=\"car-form-pop\">";
-                      echo "<p><span>Available</span></p>
-                      <div class=\"location1\">
-                    <h3>Location: <span>$tworkers_lga</span></h3>
-                      </div>
-                      <form  action=\"#\" method=\"post\">
-                      <input type=\"hidden\" id=\"$tworkers_hashid\" value=\"$tworkers_hashid\">
-                      <div class=\"input\">
-                      <label for=\"brand2\"><span></span>Send a task to $name</label>
-											<textarea spellcheck=\"false\" name=\"email_message\" rows=\"8\" cols=\"50\"></textarea>
-											</div>
-                        <div class=\"send-button\">
-                          <input type=\"button\" onclick=\"sendTask(this.form.elements[0].id,'$sess',this.form.elements[1].value,'$Username','$skill');this.form.reset()\" name=\"sentTask\" value=\"SEND TASK\">
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+     <p class="text-success">Note: You can keep your Message Concise, You will be able to chat with this Tworker when your task is accepted</p>
+   </div>';
+
+                    echo " <div class=\"send-button\">
+                                   <input   type=\"submit\" onclick=\"sendTask(this.form.elements[0].id,'$sess',this.form.elements[1].value,'$Username','$skill');this.form.reset()\" name=\"sentTask\" value=\"SEND TASK\">
+                                 </div>
+                               </form>";
+
+
+
+
+                echo '</div>'; //div center end
+                echo "</div>
                 </div>
 
 
