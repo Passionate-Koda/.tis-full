@@ -18,13 +18,13 @@ $data2 = [
 ];
 $verify->execute($data2);
 header("Location:/myDashboard");
-echo "yes";
+// echo "yes";
 }else{
-  echo "no";
+  // echo "no";
   $mes = "Verification Failed";
   $message = preg_replace('/\s+/', '_', $mes);
 
-  // header("Location: tunsehome?msg=$message");
+  header("Location: tunsehome?msg=$message");
 }
 
 

@@ -81,8 +81,8 @@ if($page == "home"){    ?>
                         <li><a href="#"><i class="fa fa-sign-out"></i> Log Out</a></li>
                     </ul>
                 </div>
-                <div class="profile-picture">
-                    <img alt="me" src="asset/images/dummy/0c31c9dc.profile.jpg">
+                <div class="profile-picture" style="background-image:url('asset/images/dummy/0c31c9dc.profile.jpg'); background-size:cover; background-position:center; background-repeat:no-repeat;">
+                    <!-- <img alt="me" src="asset/images/dummy/0c31c9dc.profile.jpg"> -->
                 </div>
             </div><!-- header-profile -->
 

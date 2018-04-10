@@ -78,7 +78,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <link rel="stylesheet" type="text/css" href="css/component.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
   <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
-  
+
 
   <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
   <!--/web-fonts-->
@@ -192,11 +192,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     showRight = document.getElementById( 'showRight' ),
                     body = document.body;
 
-                    showRight.onclick = function() {
-                      classie.toggle( this, 'active' );
-                      classie.toggle( menuRight, 'cbp-spmenu-open' );
-                      disableOther( 'showRight' );
-                    };
+                    // showRight.onclick = function() {
+                    //   classie.toggle( this, 'active' );
+                    //   classie.toggle( menuRight, 'cbp-spmenu-open' );
+                    //   disableOther( 'showRight' );
+                    // };
 
                     function disableOther( button ) {
                       if( button !== 'showRight' ) {
@@ -641,11 +641,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <div class="col-md-9 search-car-right-text w3">
                 <div class="well well-sm">
                   <strong>Display</strong>
-                  <div class="btn-group">
+                  <!-- <div class="btn-group">
                     <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
                     </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm two"><span
                       class="glyphicon glyphicon-th"></span>Grid</a>
-                    </div>
+                    </div> -->
                   </div>
                   <div id="products" class="row list-group">
                     <!-- <div class="item  col-xs-4 col-lg-4">
