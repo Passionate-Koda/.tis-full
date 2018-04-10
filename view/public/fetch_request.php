@@ -35,8 +35,8 @@ if(isset($_GET['get'])){
 
                 <div class="clearfix"></div>
                 <a href="#" data-toggle="modal" data-target="#myModal'.$tworkers_hashid.'">
-                  <p class="listing-item-area"><span class="cityname">'.$tworkers_lga.'</span></p>
-                  
+                  <p class="listing-item-area"><span class="cityname"><i class="fa fa-map-marker"></i>'.' '.$tworkers_lga.'</span></p>
+
                 </a>
               </div>
               <div class="clearfix"></div>

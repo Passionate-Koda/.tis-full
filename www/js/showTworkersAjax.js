@@ -52,7 +52,7 @@ function showModal(url, method,params){
 
 
 
-function sendTask(ready_id,sess,val,uname,catid){
+function sendTask(ready_id,sess,val,uname,catid,tid){
 
   var owner = ready_id;
   var url = 'sendTask';
@@ -64,11 +64,17 @@ function sendTask(ready_id,sess,val,uname,catid){
   params += '&tworkers_id=' + ready_id;
   ////console.log(url);
   // //////console.log(user_id);
-  // //console.log(val);
+  // console.log(val);
   //console.log(owner);
   //console.log(params);
-
+if(val.length < 20){
+  // var err = document.getElementById("err"+tid);
+  // console.log(err);
+  // err.innerhtml = "PLease give more detail about your task";
+  alert("Please give more detail of your task");
+}else{
    sendTaskAjax(url, method, params);
+}
 
 }
 

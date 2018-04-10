@@ -72,20 +72,22 @@ $Username = ucfirst($username);
                   <hr>
                   <p><img style=" margin-left: auto;margin-right: auto;text-align: center;display: table-cell;vertical-align: middle;max-height: 250px;max-width: 250px;" src="'.$tworkers_image.'" style="height: 100px; width: 150px" class="img-responsive" alt="Fountain" class="img-rounded img-responsive"></p>
                   <hr>
+                  <div class="well">
                   <h4>Description</h4>
                   <p>'.$tworkers_description.' </p>
+                  </div>
                   <form  action="#" method="post">
                    <input type="hidden" id="'.$tworkers_hashid.'" value="$tworkers_hashid">
                    <label for=\"brand2\"><span></span>Send a task to '.$name.'</label>
-                   	<textarea maxlength="200" maxlength="50" class="form-control" spellcheck="false" name="email_message" rows="auto" cols="50" required></textarea>';
-                    echo '<div class="content-body">
+                   	<textarea maxlength="200" maxlength="50" class="form-control" spellcheck="false" name="email_message" rows="auto" cols="50" ></textarea>';
+                    echo '<p id="err'.$tworkers_hashid.'" style="color:red"></p><div class="content-body">
                       <div class="alert alert-success">
 
      <p class="text-success">Note: You can keep your Message Concise, You will be able to chat with this Tworker when your task is accepted</p>
    </div>';
 
                     echo " <div class=\"send-button\">
-                                   <input   type=\"submit\" onclick=\"sendTask(this.form.elements[0].id,'$sess',this.form.elements[1].value,'$Username','$skill');this.form.reset()\" name=\"sentTask\" value=\"SEND TASK\">
+                                   <input class=\"form-control\"   type=\"button\" onclick=\"sendTask(this.form.elements[0].id,'$sess',this.form.elements[1].value,'$Username','$skill','$tworkers_hashid');this.form.reset()\" name=\"sentTask\" value=\"SEND TASK\">
                                  </div>
                                </form>";
 
